@@ -3,8 +3,8 @@ import { useState } from "react";
 import "./App.css";
 import foto from "./foto.png";
 import happytails from "./happytails.jpeg";
+import nobgapp from "./nobgapp.jpeg";
 import dogsPI from "./dogsPI.jpeg";
-import crypto from "./crypto.png";
 import cv from "./icons/cv.png";
 import github from "./icons/github.png";
 import linkedin from "./icons/linkedin.png";
@@ -53,7 +53,7 @@ function App() {
         </>
       ) : (
         <>
-          <section className="h-screen flex flex-col gap-10 lg:gap-0">
+          <section className="h-[800px] lg:h-screen h-max-xl flex flex-col gap-10 lg:gap-0 pt-3 lg:pt-0">
             <nav className="h-16 flex justify-around items-center">
               <a href="https://www.linkedin.com/in/juan-jose-cieri/">
                 <motion.img
@@ -166,7 +166,7 @@ function App() {
           <div className="flex justify-center items-center text-3xl font-semibold my-28 lg:my-0">
             <h3 className="font-poppins">About me</h3>
           </div>
-          <section className="h-screen flex flex-col lg:flex-row gap-10 lg:gap-0">
+          <section className="h-[800px] lg:h-screen flex flex-col lg:flex-row gap-10 lg:gap-0">
             <div className="lg:w-1/2 w-full flex flex-col justify-center items-center">
               <div className="">
                 <div className="border-b border-[#FFA1CC] pb-4 mx-5 lg:mx-0">
@@ -243,10 +243,10 @@ function App() {
               </div>
             </div>
           </section>
-          <div className="flex justify-center items-center text-3xl font-semibold mb-28 lg:mb-0">
+          <div className="flex justify-center items-center text-3xl font-semibold mb-[500px] lg:mb-0">
             <h3 className="font-poppins">Works 🚀</h3>
           </div>
-          <section className="h-screen flex">
+          <section className="h-[800px] lg:h-screen flex">
             <div className="flex flex-col lg:flex-row w-full justify-center items-center gap-20 lg:gap-3">
               <div class="m-auto  rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80">
                 <a href="#w" class="block w-full h-full">
@@ -315,25 +315,29 @@ function App() {
                 <a href="#g" class="block w-full h-full">
                   <img
                     alt="blogphotyt"
-                    src={crypto}
+                    src={nobgapp}
                     class="object-cover w-full max-h-40"
                   />
                   <div class="w-full p-4 bg-white dark:bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100">
                     <p class="font-medium text-indigo-500 text-md">2023</p>
                     <p class="mb-2 text-xl font-medium text-[#D97B01] dark:text-[#D97B01]">
-                      Crypto SPA
+                      No Bg App
                     </p>
                     <p class="font-semibold text-black dark:text-black text-md">
-                      Web page in which you can see information on the 100 best
-                      cryptocurrencies on the market. Search by name, see
-                      details, filter, among others.
+                      The Application is a sample project that uses Cloudinary's
+                      artificial intelligence to automatically erase the
+                      background of images. "Highlight the important, eliminate the unnecessary."
                     </p>
                     <div class="flex flex-wrap items-center mt-4 justify-starts">
                       <div class="text-xs mr-2 py-1.5 px-4 text-gray-600 bg-blue-100 rounded-2xl">
-                        Repository
+                      <a href="https://github.com/JuanjoCieri/no-bg-app">
+                          Repository
+                        </a>
                       </div>
                       <div class="text-xs mr-2 py-1.5 px-4 text-gray-600 bg-blue-100 rounded-2xl">
-                        Deploy
+                      <a href="https://no-bg-app.vercel.app/">
+                          Deploy
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -341,7 +345,7 @@ function App() {
               </div>
             </div>
           </section>
-          <section className="h-24 flex justify-center items-center mt-80 lg:mt-0">
+          <section className="h-24 flex justify-center items-center pt-[500px] mb-10 lg:mt-0">
             <h3 className="font-semibold">Made by Juan José Cieri 🪐🌠🌌</h3>
           </section>
           {/* <div className="w-screen h-screen bg-red-700">
